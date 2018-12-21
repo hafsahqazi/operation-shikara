@@ -1,11 +1,15 @@
-from flask import Flask
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World!'
+    dictionary = {
+        'Hafsah': 'Stupid',
+        'Musab': 'Genius'
+    }
+    return jsonify(dictionary)
 
 
 app.run(host="0.0.0.0", use_reloader=False)
