@@ -1,7 +1,5 @@
 import os
 
-from app import app
-
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 
