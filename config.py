@@ -9,7 +9,7 @@ class Config(object):
     TESTING = False
     LOCAL = True
     CSRF_ENABLED = True
-    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'postgres://postgres@localhost/hafsahqazi')
+    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'postgres://postgres@localhost/qazimusab')
 
 
 class ProductionConfig(Config):
@@ -17,7 +17,6 @@ class ProductionConfig(Config):
     DEBUG = False
     TESTING = False
     LOCAL = False
-    SAVE_LOCATION_INFO_FROM_IP = True
 
 
 class StageConfig(Config):

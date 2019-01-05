@@ -1,4 +1,8 @@
-flask
-SQLAlchemy==1.2.15
-Flask-SQLAlchemy==2.3.2
-Werkzeug==0.14.1
+Flask==0.10.1
+SQLAlchemy==1.1.1
+Flask-SQLAlchemy==2.1
+Werkzeug==0.11.11
+Flask-Cors==3.0.2
+Flask-Mail==0.9.1
+Flask-Migrate==1.8.0
+Flask-Script==2.0.5

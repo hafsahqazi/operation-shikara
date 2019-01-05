@@ -1,15 +1,9 @@
-from flask import Flask, jsonify
+from app import db, create_app, models, unauthorized
 
-app = Flask(__name__)
-
-
-@app.route('/')
-def hello_world():
-    dictionary = {
-        'Hafsah': 'Stupid',
-        'Musab': 'Genius'
-    }
-    return jsonify(dictionary)
+app = create_app()
 
 
-app.run(host="0.0.0.0", use_reloader=False)
+if __name__ == '__main__':
+    with app.app_context():
+        db.create_all()
+    app.run(host="0.0.0.0", use_reloader=False)
